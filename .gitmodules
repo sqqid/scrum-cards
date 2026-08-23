@@ -1,0 +1,6 @@
+[submodule "scrum_card_backend"]
+	path = scrum_card_backend
+	url = https://github.com/sqqid/scrum-cards-backend.git
+[submodule "scrum_cards_ui"]
+	path = scrum_cards_ui
+	url = https://github.com/sqqid/scrum-cards-ui.git
