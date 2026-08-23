@@ -1,13 +1,13 @@
 FROM golang:1.24-alpine AS backend_build
 WORKDIR /src
-COPY ./scrum_card_backend/go.mod ./scrum_card_backend/go.sum ./
+COPY ./scrum-card-backend/go.mod ./scrum-card-backend/go.sum ./
 RUN go mod download
-COPY ./scrum_card_backend/ .
+COPY ./scrum-card-backend/ .
 RUN mkdir -p /out && CGO_ENABLED=0 go build -o /out/scrumcards ./cmd/scrumcards/
 
 FROM node:23.3-slim AS frontend_build
 WORKDIR /app
-COPY ./scrum_cards_ui/ .
+COPY ./scrum-cards-ui/ .
 RUN rm -rf node_modules build ; npm install && npm run build
 
 FROM debian:bookworm-slim
