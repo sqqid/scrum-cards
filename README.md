@@ -1,8 +1,11 @@
 # Scrum Cards
 
+![Scrum Cards](assets/application-banner.jpeg)
+
 A planning poker app I've been building as a side project — my excuse for
 experimenting with new technologies and learning by shipping something small but
-complete.
+complete. It's built as a tool for smaller and bigger teams living in a scrum or
+agile environment, and meant to be self-hosted.
 
 Planning poker is how a team estimates work together: everyone secretly picks a
 score, then the scores are revealed at once. If the estimates are close, the card
